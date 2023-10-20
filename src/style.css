@@ -1,5 +1,8 @@
 body {
+  background-image: url("media/globe.png");
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 footer {
   text-align: center;
@@ -38,6 +41,7 @@ select {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px rgba(170, 170, 170, 0.281) solid;
+  line-height: 34px;
 }
 .city:last-child {
   border: none;
@@ -52,4 +56,14 @@ select {
 .time small {
   vertical-align: middle;
   font-size: 0.3em;
+}
+.reset a {
+  margin-top: 20px;
+}
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
