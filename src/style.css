@@ -1,38 +1,63 @@
 body {
-  background-image: url("media/globe.png");
-  font-family: sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/543/original/globe.png?1697946907");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
 footer {
   text-align: center;
   margin-top: 15px;
+  font-family: "Cutive Mono", monospace;
+  color: white;
+  font-size: 0.75em;
 }
 h1 {
+  color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
+  font-family: "Comfortaa", sans-serif;
 }
 h2 {
+  color: white;
   margin: 0;
   font-size: 2.5em;
+  font-family: "Cutive Mono", monospace;
 }
 p {
   margin: 0;
+  font-family: "Cutive Mono", monospace;
+  color: white;
 }
 select {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  border: 1px rgb(177, 177, 177) solid;
+  color: white;
+  border: 1px white solid;
+  background-color: transparent;
+  font-family: "Cutive Mono", monospace;
+}
+option {
+  background-color: #091724;
+}
+a {
+  color: rgb(253, 232, 186);
+  font-weight: bold;
+  transition: 200ms ease-in-out;
+}
+a:hover {
+  color: rgb(24, 59, 81);
 }
 .container {
+  background-color: #000000a2;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 300px;
   max-width: 600px;
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 11px 3px rgba(130, 130, 130, 0.7);
-  -moz-box-shadow: 0px 0px 11px 3px rgba(130, 130, 130, 0.7);
-  box-shadow: 0px 0px 11px 3px rgba(130, 130, 130, 0.7);
+  -webkit-box-shadow: 0px 0px 11px 3px rgba(21, 21, 21, 0.7);
+  -moz-box-shadow: 0px 0px 11px 3px rgba(21, 21, 21, 0.7);
+  box-shadow: 0px 0px 11px 3px rgba(21, 21, 21, 0.7);
   border-radius: 10px;
 }
 .city {
@@ -48,17 +73,21 @@ select {
 }
 .date {
   font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .time {
   font-size: 3em;
+  color: white;
+  font-family: "Cutive Mono", monospace;
 }
 .time small {
   vertical-align: middle;
   font-size: 0.3em;
 }
-.reset a {
-  margin-top: 20px;
+a.reset {
+  position: relative;
+  top: 8px;
+  color: white;
 }
 #background {
   position: fixed;
@@ -66,4 +95,9 @@ select {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+@media only screen and (max-width: 1847px) {
+  body {
+    background-size: auto;
+  }
 }
