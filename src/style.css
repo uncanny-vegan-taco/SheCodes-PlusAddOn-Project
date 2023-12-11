@@ -8,6 +8,7 @@ body {
 footer {
   text-align: center;
   margin-top: 15px;
+  margin-bottom: 20px;
   font-family: "Cutive Mono", monospace;
   color: white;
   font-size: 0.75em;
@@ -96,8 +97,33 @@ a.reset {
   min-width: 100%;
   min-height: 100%;
 }
-@media only screen and (max-width: 1847px) {
+@media (max-width: 1847px) {
   body {
     background-size: auto;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 15px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .date {
+    font-size: 12px;
+  }
+  .time {
+    font-size: 30px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+  .city {
+    flex-direction: column;
   }
 }
